@@ -1,0 +1,6 @@
+[submodule "WebClient"]
+	path = WebClient
+	url = https://github.com/fm39hz/WebClient
+[submodule "WebService"]
+	path = WebService
+	url = https://github.com/fm39hz/WebService
