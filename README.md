@@ -40,7 +40,7 @@
   - SSH:
 
     ```bash
-    git clone git@github.com:fm39hz/  DoAnWeb.git
+    git clone git@github.com:fm39hz/DoAnWeb.git
     ```
 
 - Clone Submodule về
