@@ -33,23 +33,23 @@
 
   - HTTPS:
 
-  ```bash
-      git clone https://github.com/fm39hz/DoAnWeb.git
-  ```
+    ```bash
+    git clone https://github.com/fm39hz/DoAnWeb.git
+    ```
 
   - SSH:
 
-  ```bash
-      git clone git@github.com:fm39hz/DoAnWeb.git
-  ```
+    ```bash
+    git clone git@github.com:fm39hz/  DoAnWeb.git
+    ```
 
 - Clone Submodule về
 
-```bash
-    git submodule init
-    git submodule sync
-    git submodule update
-```
+  ```bash
+  git submodule init
+  git submodule sync
+  git submodule update
+  ```
 
 ### Client side
 
@@ -57,43 +57,43 @@
 
 - Di chuyển tới Thư mục chứa client
 
-```bash
-    cd WebClient
-```
+  ```bash
+  cd WebClient
+  ```
 
 - Cài đặt dependencies
 
-```bash
-    npm install
-```
+  ```bash
+  npm install
+  ```
 
 #### Build
 
 ```bash
-    npm run build
+npm run build
 ```
 
 #### Khởi chạy client
 
 - Khởi chạy tại <http://localhost:5173>.
 
-```bash
-    npm run dev
-```
+  ```bash
+  npm run dev
+  ```
 
 #### Chạy Test
 
 - Test bằng terminal
 
-```bash
-    npm run test
-```
+  ```bash
+  npm run test
+  ```
 
 - Test bằng ui
 
-```bash
-    npm run test:ui
-```
+  ```bash
+  npm run test:ui
+  ```
 
 ### Service side
 
@@ -101,32 +101,32 @@
 
 - Di chuyển tới Thư mục chứa service
 
-```bash
-    cd WebService
-```
+  ```bash
+  cd WebService
+  ```
 
 - Cài đặt package
 
-```bash
-    dotnet restore
-```
+  ```bash
+  dotnet restore
+  ```
 
 #### Build
 
 ```bash
-    dotnet build
+dotnet build
 ```
 
 #### Chạy Service
 
 - Service sẽ chạy với url <http://localhost:5234/api/>
 
-```bash
-    dotnet run
-```
+  ```bash
+  dotnet run
+  ```
 
 #### Test
 
 ```bash
-    dotnet test
+dotnet test
 ```
