@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "311de180-e28b-46e4-8874-effca8621ece",
+		"_postman_id": "33d04c33-f671-4eb7-aaaa-dbadee88d73b",
 		"name": "Products",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "27467093-311de180-e28b-46e4-8874-effca8621ece"
+		"_uid": "27467093-33d04c33-f671-4eb7-aaaa-dbadee88d73b"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "GET Cpus",
-					"id": "c94a7666-dd54-4dea-8d77-a9be0ccb0365",
+					"id": "5b2d1218-ce84-474c-a6a0-8f7d77d65bc9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -45,7 +45,7 @@
 				},
 				{
 					"name": "PUT Cpus",
-					"id": "e2468576-79ce-4966-9ed7-d357f1cf9385",
+					"id": "1adfa5f1-696c-42c2-ab86-995759678cb1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -86,7 +86,7 @@
 				},
 				{
 					"name": "POST Cpus",
-					"id": "9758bd76-8576-48fc-bb3e-9c22151c1029",
+					"id": "61e8fcad-fca5-461f-828b-1c4979b354b4",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -119,7 +119,7 @@
 					"response": []
 				}
 			],
-			"id": "40e0012a-e32d-46e4-ab85-b3304bb8a79e",
+			"id": "03c9a326-17ba-408a-af61-a9f362cf03ff",
 			"description": "Cpus related example"
 		},
 		{
@@ -127,7 +127,7 @@
 			"item": [
 				{
 					"name": "PUT Products",
-					"id": "0de40a98-1da7-4310-9e41-158ec88cc904",
+					"id": "d47d7223-42e6-42d0-966e-9c4d03f7ceed",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -161,7 +161,7 @@
 				},
 				{
 					"name": "GET Products",
-					"id": "3cfe1f8a-1906-4eff-b718-fdbf34a4c8f3",
+					"id": "512b209e-c987-46d6-b5e6-611cd1a128bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -185,7 +185,7 @@
 					"response": []
 				}
 			],
-			"id": "5ae73151-bd36-488c-9869-5b84e99344b2"
+			"id": "42a63dc4-7fa2-4b17-9e0f-f4a89af6324e"
 		}
 	]
 }

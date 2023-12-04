@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "55bbcf92-132c-4bac-be75-c4115e7ac913",
+		"_postman_id": "89f18880-395f-4f7f-8ad7-1b8c814f7b5d",
 		"name": "Users",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "27467093-55bbcf92-132c-4bac-be75-c4115e7ac913"
+		"_uid": "27467093-89f18880-395f-4f7f-8ad7-1b8c814f7b5d"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "Login Method",
-					"id": "a53b2b82-7589-488e-b621-a379ce305b8a",
+					"id": "4ac72be2-ec55-4c1a-be96-52e5c845edd9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -45,7 +45,7 @@
 				},
 				{
 					"name": "Logout method",
-					"id": "ca0b165c-18de-41e0-b323-0b99d4d2d877",
+					"id": "774d9831-7d1f-4757-b48b-d9b17852a44c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -74,7 +74,7 @@
 				},
 				{
 					"name": "Signup Method",
-					"id": "3e5ab1c0-c6f1-49b9-9ada-f61c899ca5c1",
+					"id": "c471e1ff-8e03-4a9f-88fa-5bea24e089bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -107,14 +107,14 @@
 					"response": []
 				}
 			],
-			"id": "43959cf8-c5e7-445e-b2e9-ad48b8a335bd"
+			"id": "b734e91b-5249-4009-a71f-e1e276d163d0"
 		},
 		{
 			"name": "UserManagement",
 			"item": [
 				{
 					"name": "Get User Information",
-					"id": "e4fff0d5-8a23-4f47-85e9-22a7d0614a1c",
+					"id": "1edd3f32-acca-461c-af31-a36cdfd18d6d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -147,7 +147,7 @@
 					"response": []
 				}
 			],
-			"id": "85f94a49-4e91-4c0e-9c1c-38cae21ad609"
+			"id": "b066d927-a45b-41ed-848e-7e7363589155"
 		}
 	]
 }
