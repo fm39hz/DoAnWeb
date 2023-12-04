@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "311de180-e28b-46e4-8874-effca8621ece",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "27467093-311de180-e28b-46e4-8874-effca8621ece"
+	},
+	"item": [
+		{
+			"name": "Cpus",
+			"item": [
+				{
+					"name": "GET Cpus",
+					"id": "c94a7666-dd54-4dea-8d77-a9be0ccb0365",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Cpus/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cpus",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Cpus",
+					"id": "e2468576-79ce-4966-9ed7-d357f1cf9385",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "type",
+								"value": "cpu",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n\t{\r\n\t\t\"socket\": \"LGA 1200\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 6,\r\n\t\t\"thread\": 12,\r\n\t\t\"frequency\": 4.2,\r\n\t\t\"manufacturer\": \"Intel\",\r\n\t\t\"name\": \"I5 10400f\",\r\n\t\t\"description\": \"Cpu i5 gen 10\",\r\n\t\t\"basePrice\": 1900000,\r\n\t\t\"id\": 100\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Cpus/100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cpus",
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Cpus",
+					"id": "9758bd76-8576-48fc-bb3e-9c22151c1029",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"id\": 101,\r\n\t\"name\": \"I5 12400f\",\r\n\t\"description\": \"Cpu i5 gen 12\",\r\n\t\"basePrice\": 2900000,\r\n\t\"socket\": \"LGA 1700\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.8,\r\n\t\"manufacturer\": \"Intel\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Cpus/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cpus",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "40e0012a-e32d-46e4-ab85-b3304bb8a79e",
+			"description": "Cpus related example"
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "PUT Products",
+					"id": "0de40a98-1da7-4310-9e41-158ec88cc904",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"quantity\": 1000\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Products",
+					"id": "3cfe1f8a-1906-4eff-b718-fdbf34a4c8f3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Products/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Products",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "5ae73151-bd36-488c-9869-5b84e99344b2"
+		}
+	]
+}
