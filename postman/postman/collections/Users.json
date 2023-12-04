@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "55bbcf92-132c-4bac-be75-c4115e7ac913",
+		"name": "Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "27467093-55bbcf92-132c-4bac-be75-c4115e7ac913"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login Method",
+					"id": "a53b2b82-7589-488e-b621-a379ce305b8a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"hitpoint2k3@gmail.com\",\r\n\t\"password\" : \"D@ylahien2k3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Auth/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Auth",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout method",
+					"id": "ca0b165c-18de-41e0-b323-0b99d4d2d877",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Auth/Logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Auth",
+								"Logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup Method",
+					"id": "3e5ab1c0-c6f1-49b9-9ada-f61c899ca5c1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"email\": \"hien0188966@huce.edu.vn\",\r\n\t\"password\" : \"D@ylahien2k3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Auth/Signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Auth",
+								"Signup"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "43959cf8-c5e7-445e-b2e9-ad48b8a335bd"
+		},
+		{
+			"name": "UserManagement",
+			"item": [
+				{
+					"name": "Get User Information",
+					"id": "e4fff0d5-8a23-4f47-85e9-22a7d0614a1c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Users/iufle3c3X5WC8PP0skXqV8FylO93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Users",
+								"iufle3c3X5WC8PP0skXqV8FylO93"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "85f94a49-4e91-4c0e-9c1c-38cae21ad609"
+		}
+	]
+}
