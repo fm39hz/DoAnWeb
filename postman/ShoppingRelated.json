@@ -56,6 +56,31 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Promote Price",
+			"id": "ccb861fa-4e4a-4898-a2fc-ab03b44d8a64",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5234/api/Promote/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5234",
+					"path": [
+						"api",
+						"Promote",
+						"3"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

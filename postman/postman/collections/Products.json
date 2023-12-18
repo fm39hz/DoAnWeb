@@ -95,7 +95,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"id\": 101,\r\n\t\"name\": \"I5 12400f\",\r\n\t\"description\": \"Cpu i5 gen 12\",\r\n\t\"basePrice\": 2900000,\r\n\t\"socket\": \"LGA 1700\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.8,\r\n\t\"manufacturer\": \"Intel\"\r\n}\r\n",
+							"raw": "\t{\r\n\t\t\"socket\": \"LGA 1700\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 20,\r\n\t\t\"thread\": 24,\r\n\t\t\"frequency\": 5.3,\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \"I7 13700K\",\r\n\t\t\t\"specificationId\": 104,\r\n\t\t\t\"description\": \"Cpu i7 Gen 13\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/13700k_9339724edc0c4a89b7b73e60fb615c59_d1e37d962d6e4662aa1b0d1242abf21e_grande.png\",\r\n\t\t\t\"basePrice\": 8500000,\r\n\t\t\t\"inStock\": 150,\r\n\t\t\t\"manufacturer\": \"Intel\",\r\n\t\t\t\"reviewCount\": 32,\r\n\t\t\t\"rating\": 5,\r\n\t\t\t\"type\": \"Cpu\"\r\n\t\t},\r\n\t\t\"id\": 105\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -186,6 +186,71 @@
 				}
 			],
 			"id": "42a63dc4-7fa2-4b17-9e0f-f4a89af6324e"
+		},
+		{
+			"name": "Vgas",
+			"item": [
+				{
+					"name": "POST Vgas",
+					"id": "3876ee3f-6744-4fe6-821d-e5517108b0bb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"frequency\": 2475,\r\n\t\t\"vram\": 8,\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \" RTX 4060 WINDFORCE OC 8G\",\r\n\t\t\t\"specificationId\": 201,\r\n\t\t\t\"description\": \"Vga 4xxx Series\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/gearvn-card-man-hinh-geforce-rtx-4060-windforce-oc-8g-1_9e431e9bf58e401fa7d61c09d26bcdf1_grande.png\",\r\n\t\t\t\"basePrice\": 9400000,\r\n\t\t\t\"inStock\": 250,\r\n\t\t\t\"manufacturer\": \"Gigab\",\r\n\t\t\t\"reviewCount\": 6,\r\n\t\t\t\"rating\": 4.5,\r\n\t\t\t\"type\": \"Vga\"\r\n\t\t},\r\n\t\t\"id\": 201\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Vgas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Vgas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Vgas",
+					"id": "235a6bba-0987-4818-9cdb-7fbbff37a306",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Vgas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Vgas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "916fde90-1d8a-41d1-9d06-60ca0ee17f5d"
 		}
 	]
 }
