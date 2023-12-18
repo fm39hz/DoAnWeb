@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "03a74a57-f05f-428b-abcc-49fcbb130c3e",
+		"name": "ShoppingRelated",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "27467093-03a74a57-f05f-428b-abcc-49fcbb130c3e"
+	},
+	"item": [
+		{
+			"name": "Get Cart Info",
+			"id": "7d7bb351-2caa-4923-8637-72c054621abf",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5234/api/Cart/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5234",
+					"path": [
+						"api",
+						"Cart",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart Price",
+			"id": "4365bfda-8ccb-43e9-96a5-a90f14d11488",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5234/api/Cart/GetPrice/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5234",
+					"path": [
+						"api",
+						"Cart",
+						"GetPrice",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

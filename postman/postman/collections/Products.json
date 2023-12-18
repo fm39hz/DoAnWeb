@@ -61,7 +61,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "\r\n\t{\r\n\t\t\"socket\": \"LGA 1200\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 6,\r\n\t\t\"thread\": 12,\r\n\t\t\"frequency\": 4.2,\r\n\t\t\"manufacturer\": \"Intel\",\r\n\t\t\"name\": \"I5 10400f\",\r\n\t\t\"description\": \"Cpu i5 gen 10\",\r\n\t\t\"basePrice\": 1900000,\r\n\t\t\"id\": 100\r\n\t}",
+							"raw": "{\r\n\t\"socket\": \"LGA 1200\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.2\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -136,7 +136,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\t{\r\n\t\t\"quantity\": 1000\r\n\t}",
+							"raw": "\t{\r\n\t\t\"name\": \"I5 13600k\",\r\n\t\t\"specificationId\": 103,\r\n\t\t\"description\": \"Cpu i5 Gen 13 \",\r\n\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/13600k_9284ffebca6f4d0c9a8d9cc437c7416e_970d2f0f1e9b4dea834a37a89b3c9b51_grande.png\",\r\n\t\t\"basePrice\": 6000000,\r\n\t\t\"inStock\": 350,\r\n\t\t\"manufacturer\": \"Intel\",\r\n\t\t\"id\": 5\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -169,7 +169,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5234/api/Products/3",
+							"raw": "http://localhost:5234/api/Products/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -178,7 +178,7 @@
 							"path": [
 								"api",
 								"Products",
-								"3"
+								""
 							]
 						}
 					},

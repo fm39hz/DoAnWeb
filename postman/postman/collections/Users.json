@@ -50,14 +50,14 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "POST",
+						"method": "GET",
 						"header": [],
 						"body": {
 							"mode": "raw",
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Auth/Logout",
+							"raw": "http://localhost:5234/api/Auth/Logout/eFe4RxFSDSfRLithJeaa29F4lPx1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -66,7 +66,8 @@
 							"path": [
 								"api",
 								"Auth",
-								"Logout"
+								"Logout",
+								"eFe4RxFSDSfRLithJeaa29F4lPx1"
 							]
 						}
 					},
@@ -83,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"email\": \"hien0188966@huce.edu.vn\",\r\n\t\"password\" : \"D@ylahien2k3\"\r\n}",
+							"raw": "{\r\n\t\"email\": \"danhhien2k3@gmail.com\",\r\n\t\"password\" : \"D@ylahien2k3\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -131,6 +132,41 @@
 							}
 						},
 						"url": {
+							"raw": "http://localhost:5234/api/Users/NsWsCMfSowYLe4cEYYwaVf0Bf3H3/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Users",
+								"NsWsCMfSowYLe4cEYYwaVf0Bf3H3",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change User Information",
+					"id": "fc4e3909-aa44-48e1-b57a-98d4b0d1ff19",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"uid\": \"NsWsCMfSowYLe4cEYYwaVf0Bf3H3\",\r\n\t\"displayName\": \"Hiển phạm\",\r\n\t\"email\": \"hitpoint2k3@gmail.com\",\r\n\t\"phoneNumber\": \"+84849070703\",\r\n\t\"photoUrl\": \"https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/407708812_1774006016407419_572369696133765911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG-DmZ4o0lwO9K9FqfdkN4iV4iQtN97U-NXiJC033tT4zJ_kl5KHlXOGgDrWI5ynDdS-yjg6nh7z711w6a1536w&_nc_ohc=8OVfiUhQ0lEAX-7y-N1&_nc_ht=scontent.fhan2-4.fna&oh=00_AfCC1BX7DHkly_wyQhkZhmmeeE0CMWvcGVXHQZyC0Vak8w&oe=658599CD\",\r\n\t\"providerId\": \"firebase\",\r\n\t\"emailVerified\": false,\r\n\t\"disabled\": false,\r\n\t\"providerData\": [\r\n\t\t{\r\n\t\t\t\"uid\": \"hitpoint2k3@gmail.com\",\r\n\t\t\t\"displayName\": \"Hiển phạm\",\r\n\t\t\t\"email\": \"hitpoint2k3@gmail.com\",\r\n\t\t\t\"phoneNumber\": \"+84849070703\",\r\n\t\t\t\"photoUrl\": \"https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/407708812_1774006016407419_572369696133765911_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeG-DmZ4o0lwO9K9FqfdkN4iV4iQtN97U-NXiJC033tT4zJ_kl5KHlXOGgDrWI5ynDdS-yjg6nh7z711w6a1536w&_nc_ohc=8OVfiUhQ0lEAX-7y-N1&_nc_ht=scontent.fhan2-4.fna&oh=00_AfCC1BX7DHkly_wyQhkZhmmeeE0CMWvcGVXHQZyC0Vak8w&oe=658599CD\",\r\n\t\t\t\"providerId\": \"password\"\r\n\t\t}\r\n\t],\r\n\t\"tokensValidAfterTimestamp\": \"2023-12-04T09:42:39Z\",\r\n\t\"userMetaData\": {\r\n\t\t\"creationTimestamp\": \"2023-12-04T09:42:39.72Z\",\r\n\t\t\"lastSignInTimestamp\": \"2023-12-18T08:13:13.654Z\",\r\n\t\t\"lastRefreshTimestamp\": \"2023-12-18T08:13:13.654Z\"\r\n\t},\r\n\t\"customClaims\": {},\r\n\t\"tenantId\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
 							"raw": "http://localhost:5234/api/Users/iufle3c3X5WC8PP0skXqV8FylO93",
 							"protocol": "http",
 							"host": [
@@ -141,6 +177,33 @@
 								"api",
 								"Users",
 								"iufle3c3X5WC8PP0skXqV8FylO93"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Logged In State",
+					"id": "063f3453-e9ba-4a70-9d53-88072b1fa120",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Users/IsLoggedIn/NsWsCMfSowYLe4cEYYwaVf0Bf3H3/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Users",
+								"IsLoggedIn",
+								"NsWsCMfSowYLe4cEYYwaVf0Bf3H3",
+								""
 							]
 						}
 					},
