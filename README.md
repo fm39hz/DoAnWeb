@@ -24,6 +24,8 @@
   - [ASP.net](https://asp.net)
   - [EFCore](https://github.com/dotnet/efcore)
   - [SQLServer2022](https://www.microsoft.com/en-us/sql-server/)
+- Deploying
+  - [Docker](https://docker.com)
 
 ## Triển khai
 
@@ -43,7 +45,7 @@
     git clone git@github.com:fm39hz/DoAnWeb.git
     ```
 
-- Clone Submodule về
+- Clone Submodule
 
   ```bash
   git submodule init
@@ -51,82 +53,41 @@
   git submodule update
   ```
 
-### Client side
+### Cài đặt server
 
-#### Cài đặt
+#### Thiết lập Db
 
-- Di chuyển tới Thư mục chứa client
-
+- Cài đặt [Docker Desktop](https://docker.com)
+- Compose Image
   ```bash
-  cd WebClient
+  docker-compose build
+  ```
+- Khởi tạo db
+  ```bash
+  docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime'
+  ```
+  ```sql
+  use master
+  go
+  create database WebData
+  go
+  exit
+  ```
+- Import db
+  ```bash
+   docker exec -it mssql mkdir /var/opt/mssql/backup && docker cp WebData/WebData.sql mssql:/var/opt/mssql/backup/WebData.sql
+  ```
+  ```bash
+  docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime' -i '/var/opt/mssql/backup/WebData.sql'
   ```
 
-- Cài đặt dependencies
+#### Triển khai
 
+- Di chuyển tới folder DoAnWeb
   ```bash
-  npm install
+  cd DoAnWeb
   ```
-
-#### Build
-
-```bash
-npm run build
-```
-
-#### Khởi chạy client
-
-- Khởi chạy tại <http://localhost:5173>.
-
+- Khởi chạy
   ```bash
-  npm run dev
+  docker-compose up
   ```
-
-#### Chạy Test
-
-- Test bằng terminal
-
-  ```bash
-  npm run test
-  ```
-
-- Test bằng ui
-
-  ```bash
-  npm run test:ui
-  ```
-
-### Service side
-
-#### Cài đặt
-
-- Di chuyển tới Thư mục chứa service
-
-  ```bash
-  cd WebService
-  ```
-
-- Cài đặt package
-
-  ```bash
-  dotnet restore
-  ```
-
-#### Build
-
-```bash
-dotnet build
-```
-
-#### Chạy Service
-
-- Service sẽ chạy với url <http://localhost:5234/api/>
-
-  ```bash
-  dotnet run
-  ```
-
-#### Test
-
-```bash
-dotnet test
-```
