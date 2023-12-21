@@ -61,7 +61,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"socket\": \"LGA 1200\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.2\r\n}",
+							"raw": "{\r\n\t\"socket\": \"LGA 1200\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.2,\r\n\t\"id\": 100\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -69,7 +69,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Cpus/100",
+							"raw": "http://localhost:5234/api/Cpus",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -77,8 +77,7 @@
 							"port": "5234",
 							"path": [
 								"api",
-								"Cpus",
-								"100"
+								"Cpus"
 							]
 						}
 					},
