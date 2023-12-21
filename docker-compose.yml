@@ -1,0 +1,26 @@
+version: "3.9"
+
+services:
+  service:
+    build: /WebService
+    container_name: web-service
+    ports:
+      - "5234:80"
+
+  client:
+    build: /WebClient
+    container_name: web-client
+    ports:
+      - "5173:3000"
+
+  sql:
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    container_name: mssql
+    ports:
+      - "1433:1433" 
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=@VeryComplexPassword1thTime
+
+volumes:
+  mssql-data: {}
