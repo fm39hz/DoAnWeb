@@ -95,7 +95,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\t{\r\n\t\t\"socket\": \"LGA 1700\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 20,\r\n\t\t\"thread\": 24,\r\n\t\t\"frequency\": 5.3,\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \"I7 13700K\",\r\n\t\t\t\"specificationId\": 104,\r\n\t\t\t\"description\": \"Cpu i7 Gen 13\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/13700k_9339724edc0c4a89b7b73e60fb615c59_d1e37d962d6e4662aa1b0d1242abf21e_grande.png\",\r\n\t\t\t\"basePrice\": 8500000,\r\n\t\t\t\"inStock\": 150,\r\n\t\t\t\"manufacturer\": \"Intel\",\r\n\t\t\t\"reviewCount\": 32,\r\n\t\t\t\"rating\": 5,\r\n\t\t\t\"type\": \"Cpu\"\r\n\t\t},\r\n\t\t\"id\": 105\r\n\t}",
+							"raw": "\t{\r\n\t\t\"socket\": \"LGA 1700\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 6,\r\n\t\t\"thread\": 12,\r\n\t\t\"frequency\": 4.8,\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \"I5 12400\",\r\n\t\t\t\"description\": \"Cpu i5 Gen 12\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/12400_7150a7594d524982ba859a04ed952903_938a2a0ca05546eb940547a6d50e7bda_grande.png\",\r\n\t\t\t\"basePrice\": 3900000,\r\n\t\t\t\"inStock\": 250,\r\n\t\t\t\"manufacturer\": \"Intel\",\r\n\t\t\t\"reviewCount\": 12,\r\n\t\t\t\"rating\": 4.9,\r\n\t\t\t\"type\": \"Cpu\"\r\n\t\t}\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -113,6 +113,31 @@
 								"api",
 								"Cpus",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Cpus",
+					"id": "bd23d6a1-3999-4976-a082-c43587a7de06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Cpus/108",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cpus",
+								"108"
 							]
 						}
 					},
@@ -136,7 +161,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\t{\r\n\t\t\"name\": \"I5 13600k\",\r\n\t\t\"specificationId\": 103,\r\n\t\t\"description\": \"Cpu i5 Gen 13 \",\r\n\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/13600k_9284ffebca6f4d0c9a8d9cc437c7416e_970d2f0f1e9b4dea834a37a89b3c9b51_grande.png\",\r\n\t\t\"basePrice\": 6000000,\r\n\t\t\"inStock\": 350,\r\n\t\t\"manufacturer\": \"Intel\",\r\n\t\t\"id\": 5\r\n\t}",
+							"raw": "\t{\r\n\t\t\"name\": \"RTX 4060 WINDFORCE OC 8G\",\r\n\t\t\"specificationId\": 201,\r\n\t\t\"description\": \"Vga 4xxx Series\",\r\n\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/gearvn-card-man-hinh-geforce-rtx-4060-windforce-oc-8g-1_9e431e9bf58e401fa7d61c09d26bcdf1_grande.png\",\r\n\t\t\"basePrice\": 9400000,\r\n\t\t\"inStock\": 250,\r\n\t\t\"manufacturer\": \"Gigabyte\",\r\n\t\t\"reviewCount\": 6,\r\n\t\t\"rating\": 4.5,\r\n\t\t\"type\": \"Vga\",\r\n\t\t\"id\": 9\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -144,7 +169,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Products/3",
+							"raw": "http://localhost:5234/api/Products/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -153,7 +178,7 @@
 							"path": [
 								"api",
 								"Products",
-								"3"
+								""
 							]
 						}
 					},
@@ -179,6 +204,32 @@
 								"api",
 								"Products",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Promote Price",
+					"id": "ccb861fa-4e4a-4898-a2fc-ab03b44d8a64",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Products/Promoted/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Products",
+								"Promoted",
+								"3"
 							]
 						}
 					},

@@ -16,7 +16,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5234/api/Cart/1",
+					"raw": "http://localhost:5234/api/Cart/iufle3c3X5WC8PP0skXqV8FylO93",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -25,7 +25,7 @@
 					"path": [
 						"api",
 						"Cart",
-						"1"
+						"iufle3c3X5WC8PP0skXqV8FylO93"
 					]
 				}
 			},
@@ -41,7 +41,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5234/api/Cart/GetPrice/1",
+					"raw": "http://localhost:5234/api/Cart/GetPrice/iufle3c3X5WC8PP0skXqV8FylO93",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -51,15 +51,15 @@
 						"api",
 						"Cart",
 						"GetPrice",
-						"1"
+						"iufle3c3X5WC8PP0skXqV8FylO93"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get Promote Price",
-			"id": "ccb861fa-4e4a-4898-a2fc-ab03b44d8a64",
+			"name": "Get ShoppingItems",
+			"id": "eb2c3f3c-5639-4ea7-b447-add5e3b2d982",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -67,7 +67,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5234/api/Promote/3",
+					"raw": "http://localhost:5234/api/ShoppingItems/",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -75,8 +75,68 @@
 					"port": "5234",
 					"path": [
 						"api",
-						"Promote",
-						"3"
+						"ShoppingItems",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put ShoppingItems",
+			"id": "c522ca9c-0d0d-4f0f-a775-dc0626e17c68",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"promoteType\": \"Cpu\",\r\n\t\"productId\": 3,\r\n\t\"cartId\": 1,\r\n\t\"quantity\": 3,\r\n\t\"isSelected\": 1,\r\n\t\"id\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5234/api/ShoppingItems/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5234",
+					"path": [
+						"api",
+						"ShoppingItems",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Promoted Price of Items",
+			"id": "aec5e92f-2e2e-4fa4-8da2-df2781a0db79",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5234/api/ShoppingItems/GetPrice/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5234",
+					"path": [
+						"api",
+						"ShoppingItems",
+						"GetPrice",
+						"1"
 					]
 				}
 			},
