@@ -105,3 +105,7 @@
   ```
 
 - Website sẽ được khởi chạy ở http://localhost:5173
+
+### Sử dụng
+
+- Đăng nhập với email `hien0188966@nuce.edu.vn` và mật khẩu `123456`
