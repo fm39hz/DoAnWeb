@@ -68,6 +68,56 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Get Order with id",
+					"id": "dd39d199-de2c-40d8-878d-edd287db286d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Orders/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Orders",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Order with user id",
+					"id": "2711c414-58c1-497c-87af-39230b428f6b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Orders/iufle3c3X5WC8PP0skXqV8FylO93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Orders",
+								"iufle3c3X5WC8PP0skXqV8FylO93"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "17fdfd2b-a12f-48be-ab27-d6c81392102a"
@@ -337,6 +387,56 @@
 								"api",
 								"Invoices",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Invoices by id",
+					"id": "ab97ac7e-e0cd-4288-b6ef-667f5304259e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Invoices/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Invoices",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Invoices with User ID",
+					"id": "ae128ef3-aea1-4768-9fd1-a0803e95f756",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Invoices/iufle3c3X5WC8PP0skXqV8FylO93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Invoices",
+								"iufle3c3X5WC8PP0skXqV8FylO93"
 							]
 						}
 					},
