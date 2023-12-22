@@ -59,27 +59,34 @@
 
 - Cài đặt [Docker Desktop](https://docker.com)
 - Compose Image
-  ```bash
-  docker-compose build
-  ```
+
+```bash
+docker-compose build
+```
+
 - Khởi tạo db
-  ```bash
-  docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime'
-  ```
-  ```sql
-  use master
-  go
-  create database WebData
-  go
-  exit
-  ```
+
+```bash
+docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime'
+```
+
+```sql
+use master
+go
+create database WebData
+go
+exit
+```
+
 - Import db
-  ```bash
-   docker exec -it mssql mkdir /var/opt/mssql/backup && docker cp WebData/WebData.sql mssql:/var/opt/mssql/backup/WebData.sql
-  ```
-  ```bash
-  docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime' -i '/var/opt/mssql/backup/WebData.sql'
-  ```
+
+```bash
+  docker exec -it mssql mkdir /var/opt/mssql/backup && docker cp WebData/WebData.sql mssql:/var/opt/mssql/backup/WebData.sql
+```
+
+```bash
+docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime' -i '/var/opt/mssql/backup/WebData.sql'
+```
 
 #### Triển khai
 
