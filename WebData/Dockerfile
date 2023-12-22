@@ -1,9 +1,20 @@
+# Put common setup steps in an initial stage
 FROM mcr.microsoft.com/mssql/server:2022-latest AS setup
-ENV MSSQL_PID=Developer
-ENV SA_PASSWORD=@VeryComplexPassword1thTime
-ENV ACCEPT_EULA=Y         
+# Create app directory
+WORKDIR /usr/src/app
 
-FROM setup AS data
-COPY sql/WebData.sql /var/opt/mssql/backup/WebData.sql
-FROM setup
-COPY --from=data /var/opt/mssql /var/opt/mssql
+# Copy initialization scripts
+COPY . /usr/src/app
+
+# Set environment variables, not have to write them with the docker run command
+# Note: make sure that your password matches what is in the run-initialization script 
+ENV SA_PASSWORD @VeryComplexPassword1thTime
+ENV ACCEPT_EULA Y
+ENV MSSQL_PID Express
+
+# Expose port 1433 in case accessing from other container
+# Expose port externally from docker-compose.yml
+EXPOSE 1433
+
+# Run Microsoft SQL Server and initialization script (at the same time)
+CMD /bin/bash ./entrypoint.sh

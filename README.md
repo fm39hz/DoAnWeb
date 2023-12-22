@@ -4,9 +4,9 @@
 
 ## Thành viên
 
-- Phạm Danh Hiển (Trưởng nhóm): BackEnd, Database
-- Ngô Tiến long: FrontEnd
-- Nguyễn Thạc Trung Hiếu: FrontEnd, Document
+- Phạm Danh Hiển (Trưởng nhóm): BackEnd, FrontEnd (User), Database
+- Ngô Tiến long: FrontEnd (Admin)
+- Nguyễn Thạc Trung Hiếu: FrontEnd (User), Document
 
 ## Công nghệ sử dụng
 
@@ -20,10 +20,15 @@
   - [Eslint](https://eslint.org)
   - [Prettier](https://prettier.io)
   - [HeroIcons](https://heroicons.com/)
+  - [ChakraUI](https://chakra-ui.com/)
+  - [Material Ui](https://mui.com)
+  - [Material Tailwinds](https://www.material-tailwind.com/)
 - BackEnd
   - [ASP.net](https://asp.net)
   - [EFCore](https://github.com/dotnet/efcore)
   - [SQLServer2022](https://www.microsoft.com/en-us/sql-server/)
+- Deploying
+  - [Docker](https://docker.com)
 
 ## Triển khai
 
@@ -33,17 +38,17 @@
 
   - HTTPS:
 
-    ```bash
-    git clone https://github.com/fm39hz/DoAnWeb.git
-    ```
+  ```bash
+  git clone https://github.com/fm39hz/DoAnWeb.git
+  ```
 
   - SSH:
 
-    ```bash
-    git clone git@github.com:fm39hz/DoAnWeb.git
-    ```
+  ```bash
+  git clone git@github.com:fm39hz/DoAnWeb.git
+  ```
 
-- Clone Submodule về
+- Clone Submodule
 
   ```bash
   git submodule init
@@ -51,82 +56,56 @@
   git submodule update
   ```
 
-### Client side
+### Cài đặt server
 
-#### Cài đặt
+#### Thiết lập Db
 
-- Di chuyển tới Thư mục chứa client
-
-  ```bash
-  cd WebClient
-  ```
-
-- Cài đặt dependencies
+- Cài đặt [Docker Desktop](https://docker.com) / Docker compose
+- Compose Image
 
   ```bash
-  npm install
+  docker-compose build
   ```
 
-#### Build
-
-```bash
-npm run build
-```
-
-#### Khởi chạy client
-
-- Khởi chạy tại <http://localhost:5173>.
+- Khởi tạo db
 
   ```bash
-  npm run dev
+  docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime'
   ```
 
-#### Chạy Test
+  ```sql server
+  use master
+  create database WebData
+  go;
+  exit
+  ```
 
-- Test bằng terminal
+- Import db
 
   ```bash
-  npm run test
+  docker exec -it mssql mkdir /var/opt/mssql/backup && docker cp WebData/WebData.sql mssql:/var/opt/mssql/backup/WebData.sql
   ```
-
-- Test bằng ui
 
   ```bash
-  npm run test:ui
+  docker exec -it mssql opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P '@VeryComplexPassword1thTime' -i '/var/opt/mssql/backup/WebData.sql'
   ```
 
-### Service side
+#### Triển khai
 
-#### Cài đặt
-
-- Di chuyển tới Thư mục chứa service
+- Di chuyển tới folder DoAnWeb
 
   ```bash
-  cd WebService
+  cd DoAnWeb
   ```
 
-- Cài đặt package
+- Khởi chạy
 
   ```bash
-  dotnet restore
+  docker-compose up
   ```
 
-#### Build
+- Website sẽ được khởi chạy ở http://localhost:5173
 
-```bash
-dotnet build
-```
+### Sử dụng
 
-#### Chạy Service
-
-- Service sẽ chạy với url <http://localhost:5234/api/>
-
-  ```bash
-  dotnet run
-  ```
-
-#### Test
-
-```bash
-dotnet test
-```
+- Đăng nhập với email `hien0188966@nuce.edu.vn` và mật khẩu `123456`
