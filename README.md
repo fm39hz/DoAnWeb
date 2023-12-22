@@ -72,7 +72,6 @@
 
   ```sql server
   use master
-  go;
   create database WebData
   go;
   exit
