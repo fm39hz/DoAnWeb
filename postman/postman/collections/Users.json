@@ -20,7 +20,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"email\": \"hitpoint2k3@gmail.com\",\r\n\t\"password\" : \"D@ylahien2k3\"\r\n}",
+							"raw": "{\r\n\t\"email\": \"hien0188966@nuce.edu.vn\",\r\n\t\"password\" : \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -84,7 +84,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"email\": \"danhhien2k3@gmail.com\",\r\n\t\"password\" : \"D@ylahien2k3\"\r\n}",
+							"raw": "{\r\n\t\"email\": \"hien0188966@nuce.edu.vn\",\r\n\t\"password\" : \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -132,7 +132,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Users/",
+							"raw": "http://localhost:5234/api/Users/eFe4RxFSDSfRLithJeaa29F4lPx1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -141,7 +141,7 @@
 							"path": [
 								"api",
 								"Users",
-								""
+								"eFe4RxFSDSfRLithJeaa29F4lPx1"
 							]
 						}
 					},

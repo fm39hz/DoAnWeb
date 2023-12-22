@@ -79,7 +79,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5234/api/Orders/1",
+							"raw": "http://localhost:5234/api/Orders/7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -88,7 +88,7 @@
 							"path": [
 								"api",
 								"Orders",
-								"1"
+								"7"
 							]
 						}
 					},
@@ -104,7 +104,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5234/api/Orders/iufle3c3X5WC8PP0skXqV8FylO93",
+							"raw": "http://localhost:5234/api/Orders/NsWsCMfSowYLe4cEYYwaVf0Bf3H3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -113,7 +113,7 @@
 							"path": [
 								"api",
 								"Orders",
-								"iufle3c3X5WC8PP0skXqV8FylO93"
+								"NsWsCMfSowYLe4cEYYwaVf0Bf3H3"
 							]
 						}
 					},
@@ -135,7 +135,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5234/api/Cart/iufle3c3X5WC8PP0skXqV8FylO93",
+							"raw": "http://localhost:5234/api/Cart/NsWsCMfSowYLe4cEYYwaVf0Bf3H3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -144,7 +144,7 @@
 							"path": [
 								"api",
 								"Cart",
-								"iufle3c3X5WC8PP0skXqV8FylO93"
+								"NsWsCMfSowYLe4cEYYwaVf0Bf3H3"
 							]
 						}
 					},
@@ -187,7 +187,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"userUid\": \"iufle3c3X5WC8PP0skXqV8FylO93\",\r\n\t\"name\": \"Phạm Danh Hiển\",\r\n\t\"phoneNumber\": \"0849070703\",\r\n\t\"address\": \"54 183 Lĩnh Nam\",\r\n\t\"gender\": \"Nam\"\r\n}",
+							"raw": "{\r\n\t\"userUid\": \"NsWsCMfSowYLe4cEYYwaVf0Bf3H3\",\r\n\t\"name\": \"Phạm Danh Hiển\",\r\n\t\"phoneNumber\": \"0849070703\",\r\n\t\"address\": \"54 183 Lĩnh Nam\",\r\n\t\"gender\": \"Nam\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
