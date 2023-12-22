@@ -132,7 +132,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Users/iufle3c3X5WC8PP0skXqV8FylO93",
+							"raw": "http://localhost:5234/api/Users/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -141,7 +141,7 @@
 							"path": [
 								"api",
 								"Users",
-								"iufle3c3X5WC8PP0skXqV8FylO93"
+								""
 							]
 						}
 					},

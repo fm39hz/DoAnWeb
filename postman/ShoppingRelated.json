@@ -7,140 +7,343 @@
 	},
 	"item": [
 		{
-			"name": "Get Cart Info",
-			"id": "7d7bb351-2caa-4923-8637-72c054621abf",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5234/api/Cart/iufle3c3X5WC8PP0skXqV8FylO93",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5234",
-					"path": [
-						"api",
-						"Cart",
-						"iufle3c3X5WC8PP0skXqV8FylO93"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get Cart Price",
-			"id": "4365bfda-8ccb-43e9-96a5-a90f14d11488",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5234/api/Cart/GetPrice/iufle3c3X5WC8PP0skXqV8FylO93",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5234",
-					"path": [
-						"api",
-						"Cart",
-						"GetPrice",
-						"iufle3c3X5WC8PP0skXqV8FylO93"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Get ShoppingItems",
-			"id": "eb2c3f3c-5639-4ea7-b447-add5e3b2d982",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5234/api/ShoppingItems/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5234",
-					"path": [
-						"api",
-						"ShoppingItems",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Put ShoppingItems",
-			"id": "c522ca9c-0d0d-4f0f-a775-dc0626e17c68",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n\t\"promoteType\": \"Cpu\",\r\n\t\"productId\": 3,\r\n\t\"cartId\": 1,\r\n\t\"quantity\": 3,\r\n\t\"isSelected\": 1,\r\n\t\"id\": 1\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
+			"name": "Order",
+			"item": [
+				{
+					"name": "Get All Orders",
+					"id": "e783fff9-8023-4275-992b-ae266a48de60",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Orders",
+								""
+							]
 						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:5234/api/ShoppingItems/",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5234",
-					"path": [
-						"api",
-						"ShoppingItems",
-						""
-					]
+				{
+					"name": "Put Items Status",
+					"id": "b46d25fa-6518-4ac8-bf38-0e0e02f3a9ae",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Orders/1/Waiting",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Orders",
+								"1",
+								"Waiting"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"id": "17fdfd2b-a12f-48be-ab27-d6c81392102a"
 		},
 		{
-			"name": "Get Promoted Price of Items",
-			"id": "aec5e92f-2e2e-4fa4-8da2-df2781a0db79",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5234/api/ShoppingItems/GetPrice/1",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5234",
-					"path": [
-						"api",
-						"ShoppingItems",
-						"GetPrice",
-						"1"
-					]
+			"name": "Cart",
+			"item": [
+				{
+					"name": "Get Cart Info",
+					"id": "7d7bb351-2caa-4923-8637-72c054621abf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Cart/iufle3c3X5WC8PP0skXqV8FylO93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cart",
+								"iufle3c3X5WC8PP0skXqV8FylO93"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cart Price",
+					"id": "4365bfda-8ccb-43e9-96a5-a90f14d11488",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Cart/GetPrice/iufle3c3X5WC8PP0skXqV8FylO93",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cart",
+								"GetPrice",
+								"iufle3c3X5WC8PP0skXqV8FylO93"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CheckoutCart",
+					"id": "d02ff4bb-520a-48ed-a2cd-fbf272733e76",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"userUid\": \"iufle3c3X5WC8PP0skXqV8FylO93\",\r\n\t\"name\": \"Phạm Danh Hiển\",\r\n\t\"phoneNumber\": \"0849070703\",\r\n\t\"address\": \"54 183 Lĩnh Nam\",\r\n\t\"gender\": \"Nam\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Cart/CheckOut/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cart",
+								"CheckOut",
+								""
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			],
+			"id": "ff4816cc-0eac-400d-a707-f39e56351e4d"
+		},
+		{
+			"name": "ShoppingItems",
+			"item": [
+				{
+					"name": "Get ShoppingItems",
+					"id": "eb2c3f3c-5639-4ea7-b447-add5e3b2d982",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/ShoppingItems/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"ShoppingItems",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Promoted Price of Items",
+					"id": "aec5e92f-2e2e-4fa4-8da2-df2781a0db79",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/ShoppingItems/GetPrice/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"ShoppingItems",
+								"GetPrice",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put ShoppingItems",
+					"id": "c522ca9c-0d0d-4f0f-a775-dc0626e17c68",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"promoteType\": \"Cpu\",\r\n\t\"productId\": 3,\r\n\t\"cartId\": 1,\r\n\t\"quantity\": 3,\r\n\t\"isSelected\": 1,\r\n\t\"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/ShoppingItems/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"ShoppingItems",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete ShoppingItems",
+					"id": "88a0fc2a-5ca7-4950-ad4b-8f267212236c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/ShoppingItems/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"ShoppingItems",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post ShoppingItems",
+					"id": "2bd39522-312f-489f-95c8-f1bc278eac2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"promoteType\": \"Cpu\",\r\n\t\"productId\": 3,\r\n\t\"cartId\": 1,\r\n\t\"quantity\": 3,\r\n\t\"isSelected\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/ShoppingItems/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"ShoppingItems",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "57f35781-c7ce-49a4-a63e-1c0b09008272"
+		},
+		{
+			"name": "Invoices",
+			"item": [
+				{
+					"name": "Get All Invoices",
+					"id": "97536a59-1939-456c-b110-a7fc8e1d98c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Invoices/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Invoices",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "6d9468c6-82f7-4126-bcd1-1cf1ece579a9"
 		}
 	]
 }

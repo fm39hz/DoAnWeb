@@ -233,6 +233,32 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "PromoteDetails",
+					"id": "92c22f04-f128-4812-b769-b63996bf4182",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Products/PromoteDetails/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Products",
+								"PromoteDetails",
+								"3"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "42a63dc4-7fa2-4b17-9e0f-f4a89af6324e"
@@ -251,7 +277,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\t{\r\n\t\t\"frequency\": 2475,\r\n\t\t\"vram\": 8,\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \" RTX 4060 WINDFORCE OC 8G\",\r\n\t\t\t\"specificationId\": 201,\r\n\t\t\t\"description\": \"Vga 4xxx Series\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/gearvn-card-man-hinh-geforce-rtx-4060-windforce-oc-8g-1_9e431e9bf58e401fa7d61c09d26bcdf1_grande.png\",\r\n\t\t\t\"basePrice\": 9400000,\r\n\t\t\t\"inStock\": 250,\r\n\t\t\t\"manufacturer\": \"Gigab\",\r\n\t\t\t\"reviewCount\": 6,\r\n\t\t\t\"rating\": 4.5,\r\n\t\t\t\"type\": \"Vga\"\r\n\t\t},\r\n\t\t\"id\": 201\r\n\t}",
+							"raw": "\t{\r\n\t\t\"frequency\": \"2475 Hz\",\r\n\t\t\"vram\": \"8 Gb\",\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \"RTX 4060 WINDFORCE OC 8G\",\r\n\t\t\t\"specificationId\": 201,\r\n\t\t\t\"description\": \"Vga 4xxx Series\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/gearvn-card-man-hinh-geforce-rtx-4060-windforce-oc-8g-1_9e431e9bf58e401fa7d61c09d26bcdf1_grande.png\",\r\n\t\t\t\"basePrice\": 9400000,\r\n\t\t\t\"inStock\": 250,\r\n\t\t\t\"manufacturer\": \"Gigabyte\",\r\n\t\t\t\"reviewCount\": 6,\r\n\t\t\t\"rating\": 4.5\r\n\t\t}\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
