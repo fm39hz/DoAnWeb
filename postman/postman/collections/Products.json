@@ -61,7 +61,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "\r\n\t{\r\n\t\t\"socket\": \"LGA 1200\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 6,\r\n\t\t\"thread\": 12,\r\n\t\t\"frequency\": 4.2,\r\n\t\t\"manufacturer\": \"Intel\",\r\n\t\t\"name\": \"I5 10400f\",\r\n\t\t\"description\": \"Cpu i5 gen 10\",\r\n\t\t\"basePrice\": 1900000,\r\n\t\t\"id\": 100\r\n\t}",
+							"raw": "{\r\n\t\"socket\": \"LGA 1200\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.2,\r\n\t\"id\": 100\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -69,7 +69,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Cpus/100",
+							"raw": "http://localhost:5234/api/Cpus",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -77,8 +77,7 @@
 							"port": "5234",
 							"path": [
 								"api",
-								"Cpus",
-								"100"
+								"Cpus"
 							]
 						}
 					},
@@ -95,7 +94,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"id\": 101,\r\n\t\"name\": \"I5 12400f\",\r\n\t\"description\": \"Cpu i5 gen 12\",\r\n\t\"basePrice\": 2900000,\r\n\t\"socket\": \"LGA 1700\",\r\n\t\"tdp\": 75,\r\n\t\"core\": 6,\r\n\t\"thread\": 12,\r\n\t\"frequency\": 4.8,\r\n\t\"manufacturer\": \"Intel\"\r\n}\r\n",
+							"raw": "\t{\r\n\t\t\"socket\": \"LGA 1700\",\r\n\t\t\"tdp\": 75,\r\n\t\t\"core\": 6,\r\n\t\t\"thread\": 12,\r\n\t\t\"frequency\": 4.8,\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \"I5 12400\",\r\n\t\t\t\"description\": \"Cpu i5 Gen 12\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/12400_7150a7594d524982ba859a04ed952903_938a2a0ca05546eb940547a6d50e7bda_grande.png\",\r\n\t\t\t\"basePrice\": 3900000,\r\n\t\t\t\"inStock\": 250,\r\n\t\t\t\"manufacturer\": \"Intel\",\r\n\t\t\t\"reviewCount\": 12,\r\n\t\t\t\"rating\": 4.9,\r\n\t\t\t\"type\": \"Cpu\"\r\n\t\t}\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -113,6 +112,31 @@
 								"api",
 								"Cpus",
 								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Cpus",
+					"id": "bd23d6a1-3999-4976-a082-c43587a7de06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Cpus/108",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Cpus",
+								"108"
 							]
 						}
 					},
@@ -136,7 +160,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "\t{\r\n\t\t\"quantity\": 1000\r\n\t}",
+							"raw": "\t{\r\n\t\t\"name\": \"RTX 4060 WINDFORCE OC 8G\",\r\n\t\t\"specificationId\": 201,\r\n\t\t\"description\": \"Vga 4xxx Series\",\r\n\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/gearvn-card-man-hinh-geforce-rtx-4060-windforce-oc-8g-1_9e431e9bf58e401fa7d61c09d26bcdf1_grande.png\",\r\n\t\t\"basePrice\": 9400000,\r\n\t\t\"inStock\": 250,\r\n\t\t\"manufacturer\": \"Gigabyte\",\r\n\t\t\"reviewCount\": 6,\r\n\t\t\"rating\": 4.5,\r\n\t\t\"type\": \"Vga\",\r\n\t\t\"id\": 9\r\n\t}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -144,7 +168,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:5234/api/Products/3",
+							"raw": "http://localhost:5234/api/Products/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -153,7 +177,7 @@
 							"path": [
 								"api",
 								"Products",
-								"3"
+								""
 							]
 						}
 					},
@@ -169,7 +193,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:5234/api/Products/3",
+							"raw": "http://localhost:5234/api/Products/",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -178,6 +202,58 @@
 							"path": [
 								"api",
 								"Products",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Promote Price",
+					"id": "ccb861fa-4e4a-4898-a2fc-ab03b44d8a64",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Products/Promoted/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Products",
+								"Promoted",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PromoteDetails",
+					"id": "92c22f04-f128-4812-b769-b63996bf4182",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Products/PromoteDetails/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Products",
+								"PromoteDetails",
 								"3"
 							]
 						}
@@ -186,6 +262,105 @@
 				}
 			],
 			"id": "42a63dc4-7fa2-4b17-9e0f-f4a89af6324e"
+		},
+		{
+			"name": "Vgas",
+			"item": [
+				{
+					"name": "POST Vgas",
+					"id": "3876ee3f-6744-4fe6-821d-e5517108b0bb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"frequency\": \"2475 Hz\",\r\n\t\t\"vram\": \"8 Gb\",\r\n\t\t\"product\": {\r\n\t\t\t\"name\": \"RTX 4060 WINDFORCE OC 8G\",\r\n\t\t\t\"specificationId\": 201,\r\n\t\t\t\"description\": \"Vga 4xxx Series\",\r\n\t\t\t\"imageUrl\": \"https://product.hstatic.net/200000722513/product/gearvn-card-man-hinh-geforce-rtx-4060-windforce-oc-8g-1_9e431e9bf58e401fa7d61c09d26bcdf1_grande.png\",\r\n\t\t\t\"basePrice\": 9400000,\r\n\t\t\t\"inStock\": 250,\r\n\t\t\t\"manufacturer\": \"Gigabyte\",\r\n\t\t\t\"reviewCount\": 6,\r\n\t\t\t\"rating\": 4.5,\r\n\t\t\t\"type\": \"Vga\"\r\n\t\t}\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Vgas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Vgas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Vgas",
+					"id": "235a6bba-0987-4818-9cdb-7fbbff37a306",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5234/api/Vgas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Vgas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Vgas",
+					"id": "d78e5b93-e4d4-4ee6-8979-e4a07e8e81d8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"frequency\": \"2475 Hz\",\r\n\t\t\"vram\": \"8 Gb\",\r\n\t\t\"id\": 202\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Vgas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Vgas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "916fde90-1d8a-41d1-9d06-60ca0ee17f5d"
 		}
 	]
 }
