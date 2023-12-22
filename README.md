@@ -4,9 +4,9 @@
 
 ## Thành viên
 
-- Phạm Danh Hiển (Trưởng nhóm): BackEnd, Database
-- Ngô Tiến long: FrontEnd
-- Nguyễn Thạc Trung Hiếu: FrontEnd, Document
+- Phạm Danh Hiển (Trưởng nhóm): BackEnd, FrontEnd (User), Database
+- Ngô Tiến long: FrontEnd (Admin)
+- Nguyễn Thạc Trung Hiếu: FrontEnd (User), Document
 
 ## Công nghệ sử dụng
 
@@ -20,6 +20,9 @@
   - [Eslint](https://eslint.org)
   - [Prettier](https://prettier.io)
   - [HeroIcons](https://heroicons.com/)
+  - [ChakraUI](https://chakra-ui.com/)
+  - [Material Ui](https://mui.com)
+  - [Material Tailwinds](https://www.material-tailwind.com/)
 - BackEnd
   - [ASP.net](https://asp.net)
   - [EFCore](https://github.com/dotnet/efcore)
@@ -57,7 +60,7 @@
 
 #### Thiết lập Db
 
-- Cài đặt [Docker Desktop](https://docker.com)
+- Cài đặt [Docker Desktop](https://docker.com) / Docker compose
 - Compose Image
 
   ```bash
@@ -100,3 +103,5 @@
   ```bash
   docker-compose up
   ```
+
+- Website sẽ được khởi chạy ở http://localhost:5173
