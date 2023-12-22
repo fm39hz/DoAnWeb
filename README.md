@@ -80,7 +80,7 @@
 - Import db
 
   ```bash
-    docker exec -it mssql mkdir /var/opt/mssql/backup && docker cp WebData/WebData.sql mssql:/var/opt/mssql/backup/WebData.sql
+  docker exec -it mssql mkdir /var/opt/mssql/backup && docker cp WebData/WebData.sql mssql:/var/opt/mssql/backup/WebData.sql
   ```
 
   ```bash
