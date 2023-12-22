@@ -1,6 +1,6 @@
 # Website bán linh kiện điện tử
 
-Đồ án công nghệ thiết kế web nâng cao nhóm 5
+Đồ án công nghệ thiết kế web nâng cao nhóm 23
 
 ## Thành viên
 
