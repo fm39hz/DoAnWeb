@@ -324,6 +324,40 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "PUT Vgas",
+					"id": "d78e5b93-e4d4-4ee6-8979-e4a07e8e81d8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\t{\r\n\t\t\"frequency\": \"2475 Hz\",\r\n\t\t\"vram\": \"8 Gb\",\r\n\t\t\"id\": 202\r\n\t}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5234/api/Vgas/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5234",
+							"path": [
+								"api",
+								"Vgas",
+								""
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "916fde90-1d8a-41d1-9d06-60ca0ee17f5d"
