@@ -13,8 +13,9 @@ services:
     ports:
       - "5173:3000"
 
-  web-database:
+  database:
     build: ./WebData
+    hostname: web-database
     container_name: web-database
     ports:
       - "1433:1433"
