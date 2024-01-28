@@ -15,16 +15,13 @@ services:
 
   database:
     build: ./WebData
-    hostname: web-database
+    user: root
     container_name: web-database
     ports:
       - "1433:1433"
     volumes:
-      - ./WebData:/mssql-data
+      - ./WebData/data:/var/opt/mssql/
     environment:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=@VeryComplexPassword1thTime
       - MSSQL_PID=developer
-
-volumes:
-  mssql-data: 
